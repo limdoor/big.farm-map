@@ -1,0 +1,118 @@
+
+html,body,#map{
+  height:100%;
+  margin:0;
+}
+
+#zoneSelect{
+  position:fixed;
+  top:10px;
+  left:10px;
+  z-index:1000;
+}
+
+#bottom{
+  position:fixed;
+  bottom:10px;
+  left:50%;
+  transform:translateX(-50%);
+  display:flex;
+  gap:10px;
+  z-index:1000;
+}
+
+#bottom button{
+  font-size:16px;
+  padding:12px 16px;
+}
+
+#parcelBox{
+  position:fixed;
+  bottom:70px;
+  left:50%;
+  transform:translateX(-50%);
+  background:#fff;
+  border:2px solid #333;
+  padding:10px;
+  display:none;
+  z-index:1001;
+}
+
+#form{
+  position:fixed;
+  left:0;
+  right:0;
+  bottom:0;
+  background:#fff;
+  border-top:3px solid #333;
+  padding:12px;
+  display:none;
+  z-index:1002;
+}
+
+#form label{
+  font-size:14px;
+  margin-top:6px;
+  display:block;
+}
+
+#form input,
+#form select,
+#form textarea{
+  width:100%;
+  font-size:16px;
+  padding:10px;
+  margin-top:4px;
+}
+
+.form-buttons{
+  display:flex;
+  gap:8px;
+  margin-top:10px;
+}
+
+.form-buttons button{
+  flex:1;
+  font-size:16px;
+  padding:12px 0;
+}
+
+.form-buttons .danger{
+  background:#d32f2f;
+  color:#fff;
+  border:none;
+}
+
+#stat{
+  position:fixed;
+  right:10px;
+  bottom:80px;
+  width:280px;
+  background:#fff;
+  border:2px solid #333;
+  padding:8px;
+  display:none;
+  z-index:1001;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  font-size:12px;
+}
+
+td,th{
+  border:1px solid #999;
+  padding:4px;
+  text-align:center;
+}
+
+.green{background:#e8f5e9;}
+.orange{background:#fff3e0;}
+.red{background:#fdecea;}
+
+.grid-line{
+  stroke:#999;
+  stroke-width:1;
+  opacity:0.25;
+}

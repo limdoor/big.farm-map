@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>감귤 과수원 관리</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="style.css">
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+
+<body>
+<div id="map"></div>
+
+<select id="zoneSelect">
+  <option>A</option><option>B</option><option>C</option>
+  <option>D</option><option>E</option><option>F</option>
+</select>
+
+<div id="bottom">
+  <button onclick="toggleParcel()">지번</button>
+  <button onclick="toggleStat()">통계</button>
+  <button onclick="backup()">백업</button>
+</div>
+
+<div id="parcelBox">
+  <input id="addr" placeholder="제주 서귀포시 상창리 2550">
+  <button onclick="searchParcel()">검색</button>
+</div>
+
+<div id="form"></div>
+
+<div id="stat">
+  <b>구역별 생산량</b><br>
+  <select id="statYear"></select>
+  <table>
+    <thead>
+      <tr>
+        <th>구역</th>
+        <th>정상</th>
+        <th>주의</th>
+        <th>병해</th>
+        <th>합계</th>
+      </tr>
+    </thead>
+    <tbody id="statBody"></tbody>
+  </table>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
